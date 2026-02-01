@@ -1,0 +1,15 @@
+{
+  "name": "lan-p2p-share-server",
+  "private": true,
+  "version": "0.1.0",
+  "main": "signaler.js",
+  "scripts": {
+    "dev": "node signaler.js",
+    "start": "node signaler.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
