@@ -5,6 +5,9 @@
     "client",
     "server"
   ],
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "concurrently \"npm run dev -w client\" \"npm run dev -w server\"",
     "dev:client": "npm run dev -w client",
@@ -20,5 +23,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
+    
   }
+  
 }
