@@ -1,4 +1,5 @@
 {
+  "packageManager": "pnpm@10.0.0",
   "name": "lan-p2p-share",
   "private": true,
   "workspaces": [
@@ -8,11 +9,12 @@
   "engines": {
     "node": "20.x"
   },
+  
   "scripts": {
     "dev": "concurrently \"npm run dev -w client\" \"npm run dev -w server\"",
     "dev:client": "npm run dev -w client",
     "dev:server": "npm run dev -w server",
-    "build": "ROLLUP_SKIP_NATIVE=1 vite build",
+    "build": "cross-env ROLLUP_SKIP_NATIVE=1 vite build",
     "preview": "npm run preview -w client",
     "lint": "npm run lint -w client",
     "start": "node server/signaler.js",
